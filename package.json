@@ -19,12 +19,20 @@
   },
   "homepage": "https://github.com/DDD-China/DDD-China-2019",
   "devDependencies": {
+    "@commitlint/cli": "^8.0.0",
+    "@commitlint/config-conventional": "^8.0.0",
     "gulp": "^3.9.1",
     "gulp-file-include": "^1.2.0",
     "gulp-include-file": "^0.1.1",
     "gulp-js-minify": "^0.0.3",
     "gulp-less": "^3.3.2",
     "gulp-rename": "^1.2.2",
-    "gulp-sequence": "^0.4.6"
+    "gulp-sequence": "^0.4.6",
+    "husky": "^2.4.0"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }
