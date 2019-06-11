@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>领域驱动设计峰会DDD-China</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script type="text/javascript" src="../lib/jquery-3.2.1.min.js"></script>
+    <link rel="icon" href="../resource/favicon.ico">
+</head>
+<body>
+
+@@include('../includes/zh/navigation-header.html')
+
+<div class="main-container">
+    <div class="grid-wrapper grid-space grid-grey">
+        <p class="grid centered title">话题出品人</p>
+    </div>
+
+    <div id="producer-list"></div>
+    @@include('../includes/zh/footer-additional.html')
+</div>
+</body>
+<script type="text/javascript" src="../js/main.js"></script>
+<script type="text/javascript" src="../data/producer-content.js"></script>
+<script type="text/javascript" src="../js/producer.js"></script>
+<script id="producer-speaker-container" type="text/html">
+    <div class="grid-cell speaker-info text-left">
+        <div class="flexbox-row">
+            <div class="speaker-img speaker-intro-row">
+                <div>
+                    <img src='${imgUrl}' alt="${name}">
+                </div>
+            </div>
+            <div class="speaker-detail speaker-intro-row">
+                <div class="speaker-detail-introduction">
+                    <div class="speaker-name">${name}</div>
+                    <div class="speaker-title">${introduction}</div>
+                </div>
+                <div class="speaker-detail-information">${information}</div>
+            </div>
+        </div>
+
+        <div class="flexbox-row">
+            <div class="speaker-topic speaker-intro-row">
+                <div class="speaker-topic-title">TOPIC</div>
+                <div class="speaker-topic-content">${topic}</div>
+            </div>
+            <div class="speaker-topic-detail flexbox-item grid-grey">
+                <div class="speaker-topic-content-detail">{{html topicInformation}}</div>
+            </div>
+        </div>
+    </div>
+</script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    focusOn(NAV_ITEMS.SPEAKER_INFO, LANGUAGE.EN);
+  })
+</script>
+</html>
