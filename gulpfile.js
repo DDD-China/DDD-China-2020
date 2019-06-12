@@ -111,9 +111,9 @@ gulp.task('dev_watch', ['build'], () => {
   browserSync.init({
     port: 8089,
     server: {
-      directory: true,
-      baseDir: './dist/'
-    }
+      baseDir: PATHS.DIST
+    },
+    startPath: `/zh`
   });
 
   gulp.watch([PATHS.HTML_EN, PATHS.HTML_EN_INCLUDE], ['html_en']);
