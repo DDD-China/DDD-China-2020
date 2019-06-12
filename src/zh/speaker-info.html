@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>领域驱动设计峰会DDD-China</title>
@@ -7,68 +8,70 @@
     <script type="text/javascript" src="../lib/jquery-3.2.1.min.js"></script>
     <link rel="icon" href="../resource/favicon.ico">
 </head>
+
 <body>
 
-@@include('../includes/zh/navigation-header.html')
+    @@include('../includes/zh/navigation-header.html')
 
-<div class="main-container">
-    <div class="grid-wrapper">
-        <div class="hero-banner">
-            <img src="../resource/Banner-Top.JPG" alt="Topic pic">
+    <div class="main-container">
+        <div class="grid-wrapper">
+            <div class="hero-banner">
+                <img src="../resource/Banner-Top.JPG" alt="Topic pic">
+            </div>
         </div>
-    </div>
 
-    <div class="grid-wrapper grid-space">
-        @@include('../includes/zh/speakers-abstract.html')
-    </div>
+        <div class="grid-wrapper grid-space">
+            @@include('../includes/zh/speakers-abstract.html')
+        </div>
 
-    <div class="grid-wrapper grid-space grid-grey">
-        <p class="grid centered title">Keynote讲师</p>
-    </div>
+        <div class="grid-wrapper grid-space grid-grey">
+            <p class="grid centered title">拟邀Keynote讲师</p>
+        </div>
 
-    <div class="grid-wrapper grid-space">
-        @@include('../includes/zh/keynote-speakers.html')
-    </div>
+        <div class="grid-wrapper grid-space">
+            @@include('../includes/zh/keynote-speakers.html')
+        </div>
 
-    <div class="grid-wrapper grid-space grid-grey">
-        <p class="grid centered title">话题出品人</p>
-    </div>
+        <div class="grid-wrapper grid-space grid-grey">
+            <p class="grid centered title">话题出品人</p>
+        </div>
 
-    <div class="grid-wrapper grid-space">
-        @@include('../includes/zh/speakers-producers.html')
-    </div>
+        <div class="grid-wrapper grid-space">
+            @@include('../includes/zh/speakers-producers.html')
+        </div>
 
-    <div class="grid-wrapper grid-space grid-grey">
-        <p class="grid centered title">讲师信息</p>
-    </div>
+        <div class="grid-wrapper grid-space grid-grey">
+            <p class="grid centered title">往届讲师信息</p>
+        </div>
 
-    <div class="grid-wrapper grid-space">
-        @@include('../includes/zh/speakers-speakers.html')
-    </div>
+        <div class="grid-wrapper grid-space">
+            @@include('../includes/zh/speakers-speakers.html')
+        </div>
 
-    <div>
-        @@include('../includes/zh/main-topics-simple.html')
-    </div>
+        <div>
+            @@include('../includes/zh/main-topics-simple.html')
+        </div>
 
-    <div class="grid-wrapper grid-space grid-grey">
-        @@include('../includes/zh/advantage.html')
-    </div>
+        <div class="grid-wrapper grid-space grid-grey">
+            @@include('../includes/zh/advantage.html')
+        </div>
 
-    <div class="grid-wrapper grid-space" id="topic-uploading">
-        @@include('../includes/zh/workshop-1/workshop.html')
-    </div>
+        <div class="grid-wrapper grid-space" id="topic-uploading">
+            @@include('../includes/zh/workshop-1/workshop.html')
+        </div>
 
-    <!--<div class="grid-wrapper grid-space">-->
+        <!--<div class="grid-wrapper grid-space">-->
         <!--@@include('../includes/zh/partner.html')-->
-    <!--</div>-->
+        <!--</div>-->
 
-    @@include('../includes/zh/footer-additional.html')
-</div>
+        @@include('../includes/zh/footer-additional.html')
+    </div>
 </body>
 <script type="text/javascript" src="../js/main.js"></script>
 <script type="text/javascript">
-  $(document).ready(function() {
-    focusOn(NAV_ITEMS.SPEAKER_INFO, LANGUAGE.EN);
-  })
+    $(document).ready(function () {
+        focusOn(NAV_ITEMS.SPEAKER_INFO, LANGUAGE.EN);
+    })
 </script>
+
 </html>
