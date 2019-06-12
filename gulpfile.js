@@ -1,96 +1,125 @@
-var gulp = require('gulp'),
-  gulp_sequence = require('gulp-sequence'),
-  rename = require('gulp-rename'),
+const gulp = require('gulp'),
   fileinclude = require('gulp-file-include'),
+  gulpIf = require('gulp-if'),
   minifyjs = require('gulp-js-minify'),
-  less = require('gulp-less');
+  less = require('gulp-less'),
+  cleanCSS = require('gulp-clean-css'),
+  del = require('del'),
+  plumber = require('gulp-plumber'),
+  imagemin = require('gulp-imagemin'),
+  imageminAdvpng = require('imagemin-advpng'),
+  imageminJpegRecompress = require('imagemin-jpeg-recompress'),
+  changed = require('gulp-changed'),
+  browserSync = require('browser-sync').create();
 
-var sourceRoot = 'src';
-var buildRoot = 'build';
+const PATHS = {
+  SRC: './src',
+  DIST: './dist',
+  HTML_EN: './src/en/**/*.html',
+  HTML_ZH: './src/zh/**/*.html',
+  HTML_EN_INCLUDE: './src/includes/en/**/*.html',
+  HTML_ZH_INCLUDE: './src/includes/zh/**/*.html',
+  JS: [
+    './src/data/*.js',
+    './src/js/*.js',
+    './src/lib/*.js'
+  ],
+  STYLE: './src/style/*.less',
+  IMG: './src/resource/**/@(*.png|*.PNG|*.jpg|*.jpeg|*.JPG|*.JPEG)',
+  OTHER_RES: './src/resource/**/!(*.png|*.PNG|*.jpg|*.jpeg|*.JPG|*.JPEG)'
+}
 
-gulp.task('watch',
-  gulp_sequence([
-    'build',
-    'watch_js',
-    'watch_style',
-    'watch_html'
-  ])
-);
+const ENV = process.env.NODE_ENV;
 
-gulp.task('build',
-  gulp_sequence(([
-    'compile_less',
-    'include_zh_index',
-    'include_en_index',
-    'prepare_data'
-  ]))
-)
+const isProd = (() => ENV === 'production')();
 
-gulp.task('watch_js', function() {
-  gulp.watch(
-    [sourceRoot + '/js/*.js', sourceRoot + '/data/*'],
-    [
-      'prepare_data'
-    ]
-  )
+gulp.task('clean', () => del(PATHS.DIST));
+
+gulp.task('html_en', () => {
+	return gulp.src(PATHS.HTML_EN, { base: PATHS.SRC })
+		.pipe(plumber())
+        .pipe(fileinclude({
+            prefix: '@@',
+            basepath: '@file',
+            indent: true
+        }))
+    .pipe(gulp.dest(PATHS.DIST))
+    .pipe(browserSync.stream());
 });
 
-gulp.task('include_zh_index', function() {
-  gulp.src('src/zh/**.html')
-    .pipe(fileinclude({
-      prefix: '@@',
-      basepath: '@file'
-    }))
-    .pipe(gulp.dest(buildRoot + '/zh'))
-})
-
-gulp.task('include_en_index', function() {
-  gulp.src('src/en/**.html')
-    .pipe(fileinclude({
-      prefix: '@@',
-      basepath: '@file'
-    }))
-    .pipe(gulp.dest(buildRoot + '/en'))
-})
-
-gulp.task('watch_html', function() {
-  gulp.watch(
-    [
-      sourceRoot + '/zh/**.html',
-      sourceRoot + '/includes/zh/**.html',
-      sourceRoot + '/en/**.html',
-      sourceRoot + '/includes/en/**.html'
-    ],
-    ['include_zh_index', 'include_en_index'])
-})
-
-gulp.task('minify_js', function() {
-  gulp.src([sourceRoot + '/js/*.js'])
-    .pipe(minifyjs())
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest(buildRoot + '/js'))
+gulp.task('html_zh', () => {
+	return gulp.src(PATHS.HTML_ZH, { base: PATHS.SRC })
+		.pipe(plumber())
+        .pipe(fileinclude({
+            prefix: '@@',
+            basepath: '@file',
+            indent: true
+        }))
+		.pipe(gulp.dest(PATHS.DIST))
+    .pipe(browserSync.stream());
 });
 
-gulp.task('compile_less', function() {
-  gulp.src(sourceRoot + '/style/**.less')
-    .pipe(less())
-    .pipe(gulp.dest(buildRoot + '/css/'))
+gulp.task('style', () => {
+	return gulp.src(PATHS.STYLE)
+		.pipe(plumber())
+		.pipe(less())
+		.pipe(gulpIf(isProd, cleanCSS()))
+		.pipe(gulp.dest(`${PATHS.DIST}/css`))
+    .pipe(browserSync.stream());
 });
 
-gulp.task('watch_style', function() {
-  gulp.watch(
-    [sourceRoot + '/style/*.less'],
-    ['compile_less']
-  )
+gulp.task('js', () => {
+	return gulp.src(PATHS.JS, { base: PATHS.SRC })
+		.pipe(plumber())
+		.pipe(gulpIf(isProd, minifyjs()))
+		.pipe(gulp.dest(PATHS.DIST))
+		.pipe(browserSync.stream());
 });
 
-gulp.task('prepare_data', function() {
-  gulp.src([
-    sourceRoot + '/data/**',
-    sourceRoot + '/js/**',
-    sourceRoot + '/resource/**',
-    sourceRoot + '/lib/**'],
-    {base: sourceRoot}
-    )
-    .pipe(gulp.dest(buildRoot))
-})
+gulp.task('img', () => {
+	return gulp.src(PATHS.IMG, { base: PATHS.SRC })
+		.pipe(plumber())
+		.pipe(changed(PATHS.DIST))
+		.pipe(gulpIf(isProd, imagemin(
+			[
+				imageminAdvpng(),
+				imageminJpegRecompress({quality: 'low'})
+      ])
+    ))
+		.pipe(gulp.dest(PATHS.DIST))
+		.pipe(browserSync.stream());
+});
+
+gulp.task('copy_other_res', () => {
+	return gulp.src(PATHS.OTHER_RES, { base: PATHS.SRC })
+		.pipe(plumber())
+		.pipe(changed(PATHS.DIST))
+		.pipe(gulp.dest(PATHS.DIST))
+		.pipe(browserSync.stream());
+});
+
+gulp.task('build', ['clean'], () => gulp.start([
+  'html_en', 
+  'html_zh',
+  'style',
+  'js',
+  'img',
+  'copy_other_res'
+]));
+
+gulp.task('dev_watch', ['build'], () => {
+  browserSync.init({
+    port: 8089,
+    server: {
+      directory: true,
+      baseDir: './dist/'
+    }
+  });
+
+  gulp.watch([PATHS.HTML_EN, PATHS.HTML_EN_INCLUDE], ['html_en']);
+  gulp.watch([PATHS.HTML_ZH, PATHS.HTML_ZH_INCLUDE], ['html_zh']);
+  gulp.watch(PATHS.STYLE, ['style']);
+  gulp.watch(PATHS.JS, ['js']);
+  gulp.watch(PATHS.IMG, ['img']);
+  gulp.watch(PATHS.OTHER_RES, ['copy_other_res']);
+});
