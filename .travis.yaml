@@ -1,0 +1,25 @@
+language: node_js
+node_js: '10'
+
+branches:
+  only:
+    - master
+
+git:
+  depth: 1
+  submodules: false
+
+cache: yarn
+
+install: yarn
+
+script: yarn build
+
+deploy: 
+  provider: pages
+  keep-history: true
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  local-dir: ./dist/
+  on:
+    branch: master
