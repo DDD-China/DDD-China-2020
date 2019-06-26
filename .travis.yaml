@@ -1,11 +1,13 @@
 language: node_js
-node_js: '10'
+node_js: 
+  - "10"
 
 branches:
   only:
     - master
 
 git:
+  quite: true
   depth: 1
   submodules: false
 
