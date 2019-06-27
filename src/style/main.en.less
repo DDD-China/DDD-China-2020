@@ -124,12 +124,16 @@ a {
   display: none;
 }
 
-.menu-item-wrap:hover {
-  .menu-child {
-    display: block;
-    position: absolute;
-    background: white;
-    padding: 10px 0;
+.menu-item-wrap {
+  cursor: pointer;
+
+  &:hover {
+    .menu-child {
+      display: block;
+      position: absolute;
+      background: white;
+      padding: 10px 0;
+    }
   }
 }
 
@@ -1163,4 +1167,25 @@ a {
 
 .topic-item-2 .speaker-topic-import-icon {
   border-bottom: 10px solid red;
+}
+
+.temp-coming-soon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ee312d;
+
+  p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 58px;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    span {
+      text-transform: uppercase;
+      font-size: 38px;
+    }
+  }
 }
