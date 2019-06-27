@@ -15,17 +15,21 @@ var NAV_ITEMS = {
     itemIndex: 4,
     title: "TOPIC_GATHERING"
   },
-  LOOK_BACK_2017: {
+  LOOK_BACK: {
     itemIndex: 5,
+    title: "LOOK_BACK"
+  },
+  TRANSLATION: {
+    itemIndex: 6,
+    title: "TRANSLATION"
+  },
+  LOOK_BACK_2017: {
+    itemIndex: null,
     title: "LOOK_BACK_2017"
   },
   LOOK_BACK_2018: {
-    itemIndex: 6,
+    itemIndex: null,
     title: "LOOK_BACK_2018"
-  },
-  TRANSLATION: {
-    itemIndex: 7,
-    title: "TRANSLATION"
   },
   BOOKING_TICKETS: {
     itemIndex: null,
@@ -64,6 +68,7 @@ function changeBannerSize() {
 }
 
 function focusOn(menuItem, targetTranslateLanguage) {
+  console.log(menuItem, targetTranslateLanguage);
   var locations = targetTranslateLanguage
     ? TRANSLATION_LOCATIONS[targetTranslateLanguage]
     : TRANSLATION_LOCATIONS[LANGUAGE.EN];
