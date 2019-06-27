@@ -1,7 +1,7 @@
 const gulp = require('gulp'),
   fileinclude = require('gulp-file-include'),
   gulpIf = require('gulp-if'),
-  minifyjs = require('gulp-js-minify'),
+  minify = require('gulp-minify'),
   less = require('gulp-less'),
   cleanCSS = require('gulp-clean-css'),
   del = require('del'),
@@ -71,7 +71,7 @@ gulp.task('style', () => {
 gulp.task('js', () => {
 	return gulp.src(PATHS.JS, { base: PATHS.SRC })
 		.pipe(plumber())
-		.pipe(gulpIf(isProd, minifyjs()))
+		.pipe(gulpIf(isProd, minify()))
 		.pipe(gulp.dest(PATHS.DIST))
 		.pipe(browserSync.stream());
 });
