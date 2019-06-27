@@ -1,0 +1,59 @@
+#fixed-subscribe {
+  position: absolute;
+  z-index: 99;
+  &-button {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    background: #333;
+    font-size: 16px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    user-select: none;
+  
+    img {
+      width: 28px;
+      margin-right: 5px;
+    }
+  }
+
+  &-window {
+    display: none;
+    .over-layer {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    .subscribe-form {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      height: 500px;
+      background: white;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+      transform: translate(-50%, -50%);
+
+      .close-button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 5px;
+        background: #ee312d;
+        cursor: pointer;
+
+        img {
+          display: block;
+          width: 22px;
+        }
+      }
+    }
+  }
+}
