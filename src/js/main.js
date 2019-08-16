@@ -19,8 +19,12 @@ var NAV_ITEMS = {
     itemIndex: 5,
     title: "LOOK_BACK"
   },
-  TRANSLATION: {
+  ABOUT_THOUGHTWORKS: {
     itemIndex: 6,
+    title: "ABOUT_THOUGHTWORKS"
+  },
+  TRANSLATION: {
+    itemIndex: 7,
     title: "TRANSLATION"
   },
   LOOK_BACK_2017: {
@@ -45,20 +49,22 @@ var TRANSLATION_LOCATIONS = {
   [LANGUAGE.EN]: {
     CONFERENCE: "../en/index.html#agenda",
     SPEAKER_INFO: "../en/speaker-info.html",
-    WORKSHOP: "../en/workshop.html",
+    WORKSHOP: "../en/workshop-1.html",
     TOPIC_GATHERING: "../en/topic-gathering.html",
     LOOK_BACK_2017: "../en/look-back-2017.html",
     LOOK_BACK_2018: "../en/look-back-2018.html",
-    BOOKING_TICKETS: "../en/booking-tickets.html"
+    BOOKING_TICKETS: "../en/booking-tickets.html",
+    ABOUT_THOUGHTWORKS: "../en/about-thoughtworks.html"
   },
   [LANGUAGE.ZH]: {
     CONFERENCE: "../zh/index.html#agenda",
     SPEAKER_INFO: "../zh/speaker-info.html",
-    WORKSHOP: "../zh/workshop.html",
+    WORKSHOP: "../zh/workshop-1.html",
     TOPIC_GATHERING: "../zh/topic-gathering.html",
     LOOK_BACK_2017: "../zh/look-back-2017.html",
     LOOK_BACK_2018: "../zh/look-back-2018.html",
-    BOOKING_TICKETS: "../zh/booking-tickets.html"
+    BOOKING_TICKETS: "../zh/booking-tickets.html",
+    ABOUT_THOUGHTWORKS: "../zh/about-thoughtworks.html"
   }
 };
 

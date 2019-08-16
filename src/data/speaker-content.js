@@ -1,14 +1,17 @@
 var speakers = [
   [
     {
-      "producer-img": "",
+      "producer-img": "../resource/speakers/huhao.png",
       "producer-name": "胡皓",
-      "producer-introduction": "..",
-      "producer-information": "...",
-      "producer-topic": "...",
-      "topic-information": "..."
+      "producer-introduction": "ThoughtWorks 高级咨询师",
+      "producer-information":
+        "擅长于全栈软件开发、端到端交付、面向对象设计、测试驱动开发、持续集成/持续交付，领域驱动设计、整洁架构、微服务、DevOps、Scrum、Kanban以及其他的技术和方法论。当前，正深耕于领域驱动设计、微服务、中台战略，并致力于帮助ThoughtWorks的客户实现数字化转型",
+      "producer-topic": "实战化领域驱动设计工作坊",
+      "topic-information":
+        "“实战化领域驱动设计工作坊”基于ThoughtWorks所总结的“基准化”方法，从一个沙盘业务场景出发，通过问题澄清、业务抽象、统一语言、问题域划分、领域建模，由一线咨询师带您一步步体验从DDD战略设计到战术设计再到指导技术实现的全流程。"
     },
     {
+      noTopic: true,
       "producer-information": "...",
       "producer-topic": "...",
       "topic-information": "..."
@@ -16,14 +19,17 @@ var speakers = [
   ],
   [
     {
-      "producer-img": "",
+      "producer-img": "../resource/speakers/wangyan.png",
       "producer-name": "王岩",
-      "producer-introduction": "..",
-      "producer-information": "...",
-      "producer-topic": "...",
-      "topic-information": "..."
+      "producer-introduction": "ThoughtWorks 高级咨询师",
+      "producer-information":
+        "先后从事全栈开发工程师、技术经理、顾问等工作。在技术领域，专注于测试驱动开发、持续集成/持续交付，领域驱动设计，整洁架构，微服务，Devops 等方向。最近一年，主要服务于保险行业，专注于大型遗留项目的拆分。",
+      "producer-topic": "实战化领域驱动设计工作坊",
+      "topic-information":
+        "“实战化领域驱动设计工作坊”基于ThoughtWorks所总结的“基准化”方法，从一个沙盘业务场景出发，通过问题澄清、业务抽象、统一语言、问题域划分、领域建模，由一线咨询师带您一步步体验从DDD战略设计到战术设计再到指导技术实现的全流程。"
     },
     {
+      noTopic: true,
       "producer-information": "...",
       "producer-topic": "...",
       "topic-information": "..."
@@ -76,7 +82,7 @@ var speakers = [
 
   [
     {
-      "producer-img": "",
+      "producer-img": "../resource/speakers/gaoyikai.png",
       "producer-name": "高翊凯",
       "producer-introduction": "Amazon Web Services 解决方案架构师",
       "producer-information":
@@ -95,7 +101,7 @@ var speakers = [
 
   [
     {
-      "producer-img": "",
+      "producer-img": "../resource/speakers/wangbo.png",
       "producer-name": "王博",
       "producer-introduction": "独立软件技术顾问",
       "producer-information":
@@ -114,7 +120,7 @@ var speakers = [
 
   [
     {
-      "producer-img": "",
+      "producer-img": "../resource/speakers/fengwenhui.png",
       "producer-name": "冯文辉",
       "producer-introduction": "ThoughtWorks高级咨询师",
       "producer-information":
@@ -133,7 +139,7 @@ var speakers = [
 
   [
     {
-      "producer-img": "",
+      "producer-img": "../resource/speakers/dalei.png",
       "producer-name": "笪磊",
       "producer-introduction": "ThoughtWorks数字化转型顾问",
       "producer-information":
@@ -152,7 +158,7 @@ var speakers = [
 
   [
     {
-      "producer-img": "",
+      "producer-img": "../resource/speakers/wanxuefan.png",
       "producer-name": "万学凡",
       "producer-introduction": "ThoughtWorks华东区交付总监",
       "producer-information":
