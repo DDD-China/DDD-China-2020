@@ -1,14 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>DDD China Conference</title>
-    <link rel="stylesheet" href="../css/main.en.css">
+    <meta charset="utf-8">
+    <title>领域驱动设计峰会DDD-China</title>
+    <link rel="stylesheet" href="../css/main.css">
     <script type="text/javascript" src="../lib/jquery-3.2.1.min.js"></script>
-    <link rel="icon" href="resource/favicon.ico">
+    <link rel="icon" href="../resource/favicon.ico">
 </head>
+<style>
+    .about-thoughtworks-container {
+        margin: 0 auto;
+        padding: 60px 10%;
+    }
 
+    .about-thoughtworks-container .title {
+        font-size: 28px;
+        line-height: 46px;
+        padding: 10px 0;
+        color: #333;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .about-thoughtworks-container .wrapper {
+        display: flex;
+        padding: 20px 0 40px;
+    }
+
+    .about-thoughtworks-container .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-thoughtworks-container .logo>img {
+        width: 300px;
+    }
+
+    /* 
+    .about-thoughtworks-container .images {
+        display: grid;
+        grid-auto-columns: repeat(3, 1fr);
+        grid-gap: 4px;
+        align-items: center;
+        justify-items: center;
+    } */
+
+    .about-thoughtworks-container .images>img {
+        width: 32.3333%;
+        /* vertical-align: middle; */
+    }
+</style>
 
 <body>
     @@include('../includes/en/navigation-header.html')
@@ -19,10 +61,10 @@
                 <img src="../resource/Banner-1220-463.png" alt="Topic pic">
             </div>
         </div>
-        <div>
-            <div>关于ThoughtWorks：</div>
-            <div class="about-wrapper">
-                <div class="tw-description">
+        <div class="about-thoughtworks-container">
+            <div class="title">关于ThoughtWorks：</div>
+            <div class="wrapper">
+                <div class="text">
                     <p>ThoughtWorks是一家全球顶尖的软件及咨询公司，目前在全球十四个国家成立了40间办公室，拥有超过6000位的行业精英，通过全球资源共享和人才交流服务全球高端客户</p>
                     <p>ThoughtWorks的业务模式是通过战略定位、IT咨询、产品设计和软件交付实现端到端数字化服务，帮助全球金融、科技、制造、零售等行业的顶尖企业实现数字化转型，主力企业演进组织及科技架构、建立数字化战略方向、提升企业数字化能力。
                     </p>
@@ -31,29 +73,33 @@
                     <p>建立在中国优质的人力资源基础上，ThoughtWorks中国公司打造了世界级的软件交付中心，为全球各行业领军企业提供高端IT知识流程外包服务。在北京、西安和成都，ThoughtWorks的软件交付中心与国外知名企业开展深度合作，与客户IT团队共同解决难题，高质量交付对业务至关重要的IT系统，并帮助客户开展创新和改进。
                     </p>
                 </div>
-                <div class="wt-logo">
-
+                <div class="logo">
+                    <img src="../resource/sponsors/thoughtworks.png" alt="">
                 </div>
             </div>
-            <div>
-                <p>峰会举办初衷</p>
-                <p>
+            <div class="images">
+                <img src="../resource/tw1.jpg" alt="">
+                <img src="../resource/tw2.jpg" alt="">
+                <img src="../resource/tw3.jpg" alt="">
+            </div>
+            <div style="margin-top:60px">
+                <p class="title">峰会举办初衷</p>
+                <p class="text">
                     领域驱动设计峰会（DDD Conference）是由国内领域驱动设计（DDD）思想和实践的领军者——ThoughtWorks的架构咨询师们组织发起，希望为国内的领域驱动设计（DDD）
                     实践者们提供了一个互相交流、分享自己团队的成功经验的机会的平台，使得领域驱动设计 （DDD）的架构思想能够在国内被更多人所认知，从而形成更大的规模效应。
                 </p>
             </div>
-            <div>
+            <!-- <div>
                 <p>ThoughtWorks与DDD</p>
-            </div>
+            </div> -->
         </div>
+        @@include('../includes/en/footer-additional.html')
     </div>
 </body>
 
 <script type="text/javascript" src="../js/main.js"></script>
 <script type="text/javascript">
-    $(document).ready(function () {
-        focusOn(NAV_ITEMS.ABOUT_THOUGHTWORKS, LANGUAGE.ZH);
-    })
+    focusOn(NAV_ITEMS.ABOUT_THOUGHTWORKS, LANGUAGE.ZH)
 </script>
 
 </html>
