@@ -62,7 +62,7 @@ var speakers = [
     {
       "producer-img": "../resource/wangjian.png",
       "producer-name": "王健",
-      "producer-introduction": "ThoughtWorks高级咨询师",
+      "producer-introduction": "ThoughtWorks首席咨询师",
       "producer-information":
         "一直从事国内外大型企业级软件的设计与开发，保持着对技术的热爱，享受着编码的快乐，热衷于技术分享，阿里云MVP。十年前开始接触DDD，一直在工作中运用与不断学习。近两年关注在应用DDD进行大型企业企业数字中台规划与落地，平台化建设，遗留系统服务化相关工作。",
       "producer-topic": "当我们谈中台时我们在谈些什么？",
