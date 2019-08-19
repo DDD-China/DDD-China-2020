@@ -12,19 +12,19 @@ var NAV_ITEMS = {
     title: "WORKSHOP"
   },
   TOPIC_GATHERING: {
-    itemIndex: 3,
+    itemIndex: 4,
     title: "TOPIC_GATHERING"
   },
   LOOK_BACK: {
-    itemIndex: 4,
+    itemIndex: 5,
     title: "LOOK_BACK"
   },
   ABOUT_THOUGHTWORKS: {
-    itemIndex: 5,
+    itemIndex: 6,
     title: "ABOUT_THOUGHTWORKS"
   },
   TRANSLATION: {
-    itemIndex: 6,
+    itemIndex: 7,
     title: "TRANSLATION"
   },
   LOOK_BACK_2017: {
