@@ -24,7 +24,7 @@
 
     .about-thoughtworks-container .wrapper {
         display: flex;
-        padding: 20px 0 40px;
+        margin: 20px 0 40px;
     }
 
     .about-thoughtworks-container .logo {
@@ -37,19 +37,43 @@
         width: 300px;
     }
 
-    /* 
+
     .about-thoughtworks-container .images {
-        display: grid;
-        grid-auto-columns: repeat(3, 1fr);
+        width: 100%;
+        display: inline-grid;
+        grid-template-columns: repeat(3, 33.3%);
+        grid-template-rows: repeat(1, 100%);
         grid-gap: 4px;
         align-items: center;
-        justify-items: center;
-    } */
+        /* justify-items: center; */
+    }
 
-    .about-thoughtworks-container .images>img {
-        width: 32.3333%;
+    .about-thoughtworks-container .images>div:nth-child(1) {
+        width: 100%;
+        background: url('../resource/tw1.jpg') no-repeat;
+        background-size: contain;
+        height: 260px;
         /* vertical-align: middle; */
     }
+
+    .about-thoughtworks-container .images>div:nth-child(2) {
+        width: 100%;
+        background: url('../resource/tw2.jpg') no-repeat;
+        background-size: contain;
+        height: 260px;
+        /* vertical-align: middle; */
+    }
+
+    .about-thoughtworks-container .images>div:nth-child(3) {
+        width: 100%;
+        background: url('../resource/tw3.jpg') no-repeat;
+        background-size: 131%;
+        background-position-x: 20%;
+        height: 260px;
+        /* vertical-align: middle; */
+    }
+</style>
+
 </style>
 
 <body>
@@ -78,9 +102,9 @@
                 </div>
             </div>
             <div class="images">
-                <img src="../resource/tw1.jpg" alt="">
-                <img src="../resource/tw2.jpg" alt="">
-                <img src="../resource/tw3.jpg" alt="">
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
             <div style="margin-top:60px">
                 <p class="title">峰会举办初衷</p>
