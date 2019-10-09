@@ -49,7 +49,7 @@ var TRANSLATION_LOCATIONS = {
   [LANGUAGE.EN]: {
     CONFERENCE: "../en/index.html#agenda",
     SPEAKER_INFO: "../en/speaker-info.html",
-    WORKSHOP: "../en/workshop-1.html",
+    WORKSHOP: "../en/workshop.html",
     TOPIC_GATHERING: "../en/topic-gathering.html",
     LOOK_BACK_2017: "../en/look-back-2017.html",
     LOOK_BACK_2018: "../en/look-back-2018.html",
@@ -59,7 +59,7 @@ var TRANSLATION_LOCATIONS = {
   [LANGUAGE.ZH]: {
     CONFERENCE: "../zh/index.html#agenda",
     SPEAKER_INFO: "../zh/speaker-info.html",
-    WORKSHOP: "../zh/workshop-1.html",
+    WORKSHOP: "../zh/workshop.html",
     TOPIC_GATHERING: "../zh/topic-gathering.html",
     LOOK_BACK_2017: "../zh/look-back-2017.html",
     LOOK_BACK_2018: "../zh/look-back-2018.html",
