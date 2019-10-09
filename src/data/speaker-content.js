@@ -60,7 +60,7 @@ var speakers = [
 
   [
     {
-      "producer-img": "../resource/wangjian.png",
+      "producer-img": "../resource/speakers/wangjian.png",
       "producer-name": "王健",
       "producer-introduction": "ThoughtWorks首席咨询师",
       "producer-information":
@@ -70,7 +70,7 @@ var speakers = [
         "XX电信运营商业务中台规划设计、落地启动过程中的种种挑战，以及我们如何应对的实践经历：</br>*业务和IT并没有真正理解中台；</br>*业务和IT如何从过去的部门割裂中转变为紧密协作；</br>*如何通过业务规划设计和中台落地倒逼业务部门打破条线壁垒，横向贯通；</br>*如何把多渠道向全渠道转型及体验优化、营销业务、政企业务、新型数字化服务业务等多条线繁杂的业务诉求进行纵向切片，让中台产品敏捷落地；</br>*如何协同业务设计、前台应用设计、中台技术设计等以迭代式协同推进。"
     },
     {
-      "producer-img": "../resource/wangjian.png",
+      "producer-img": "../resource/speakers/wangjian.png",
       "producer-name": "王健",
       "producer-introduction": "",
       "producer-information": "",
@@ -268,7 +268,7 @@ var speakers = [
   ],
   [
     {
-      "producer-img": "../resource/speakers/zhangjuanchen.jpg",
+      "producer-img": "../resource/speakers/zhangjuanchen.png",
       "producer-name": "张镌宸",
       "producer-introduction": "ThoughtWorks 高级咨询师",
       "producer-information":
