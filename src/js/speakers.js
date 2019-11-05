@@ -1,6 +1,5 @@
 $(function() {
   var id = Number(window.location.search.split("=")[1]) - 1;
-  console.log(speakers[id]);
   $(".topic-item-1 .speaker-info .speaker-img img")
     .attr("src", speakers[id][0]["producer-img"])
     .attr("alt", speakers[id][0]["producer-name"]);
