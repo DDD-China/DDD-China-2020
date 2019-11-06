@@ -1,6 +1,6 @@
 var producers = [
   {
-    "producer-img": "../resource/zhuao.jpeg",
+    "producer-img": "../resource/zhuao.png",
     "producer-name": "朱傲",
     "producer-introduction": "戴姆勒大中华区高级架构师",
     "producer-information":
@@ -21,7 +21,7 @@ var producers = [
       "领域驱动设计的概念和相关实践被社区广泛采纳之后，尤其是事件风暴工作坊的流行，再一次证明了协作设计在软件开发过程中的巨大作用。在本分论坛中，我们希望从不同视角审视协作设计的过程，这种协作设计可能是架构设计，也可能是产品设计、交互设计、代码设计"
   },
   {
-    "producer-img": "../resource/zhangyi.jpeg",
+    "producer-img": "../resource/zhangyi.png",
     "producer-name": "张逸",
     "producer-introduction": "编码实践、加固设计、领域驱动实践领先者",
     "producer-information":

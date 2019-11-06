@@ -359,7 +359,7 @@ var speakers = [
   ],
   [
     {
-      "producer-img": "../resource/qianbingqin.png",
+      "producer-img": "../resource/speakers/qianbingqin1.png",
       "producer-name": "钱冰沁",
       "producer-introduction": "ThoughtWorks 高级体验设计师",
       "producer-information":
@@ -378,7 +378,7 @@ var speakers = [
   [
     {
       "producer-img": "../resource/speakers/wangzhicheng.png",
-      "producer-name": "汪志诚",
+      "producer-name": "汪志成",
       "producer-introduction": "ThoughtWorks 首席咨询师",
       "producer-information":
         "现任ThoughtWorks 的高级研发工程师。至今从事软件开发工作二十年，担任过包括测试、研发、项目经理、产品经理、技术总监在内的多种职位。",
@@ -395,7 +395,7 @@ var speakers = [
   ],
   [
     {
-      "producer-img": "../resource/zhuao.png",
+      "producer-img": "../resource/speakers/zhuao1.png",
       "producer-name": "朱傲",
       "producer-introduction": "戴姆勒大中华区 高级架构师",
       "producer-information":
@@ -413,7 +413,7 @@ var speakers = [
   ],
   [
     {
-      "producer-img": "../resource/speakers/wuxuefeng.png",
+      "producer-img": "../resource/speakers/wuxuefeng2.png",
       "producer-name": "吴雪峰",
       "producer-introduction": "ThoughtWorks 资深架构师",
       "producer-information":
@@ -446,6 +446,43 @@ var speakers = [
       "producer-topic": "领域驱动的架构演进",
       "topic-information":
         "过去的5年中，领域驱动设计在架构设计过程中的重要作用逐渐被业界主流所接受。无论是微服务架构、演进式架构、还是企业IT架构设计、企业中台设计，我们都可能看到领域驱动设计在各个架构设计层面发挥着自己的价值。我们希望通过本论坛的研讨，为听众呈现一场架构设计的盛宴，让大家能全方位的理解领域驱动设计的价值和威力"
+    }
+  ],
+  //
+  [
+    {
+      "producer-img": "../resource/speakers/liyue1.png",
+      "producer-name": "李悦",
+      "producer-introduction": "携程国际设计经理",
+      "producer-information":
+        "曾任职于51job.com，为企业用户提供招聘平台设计解决方案。目前服务于 Trip.com 机票业务线，致力于全链路设计体验工作，从0到1打造全新的国际化OTA品牌。",
+      "producer-topic": "设计中台—技术化快速推动设计一致性",
+      "topic-information":
+        "在复杂场景下，如何搭建设计中台，迅速支撑多业务线C端产品。最小化“开发和设计成本”，保证“设计质量”，统一“设计语言”，提升“品牌认知及用户体验”"
+    },
+    {
+      "producer-information": "...",
+      "producer-topic": "领域驱动的协作设计",
+      "topic-information":
+        "领域驱动设计的概念和相关实践被社区广泛采纳之后，尤其是事件风暴工作坊的流行，再一次证明了协作设计在软件开发过程中的巨大作用。在本分论坛中，我们希望从不同视角审视协作设计的过程，这种协作设计可能是架构设计，也可能是产品设计、交互设计、代码设计"
+    }
+  ],
+  [
+    {
+      "producer-img": "../resource/speakers/yinjuan1.png",
+      "producer-name": "印隽",
+      "producer-introduction": "GLODON广联达用户体验设计中心总监",
+      "producer-information":
+        "中国传媒大学客座硕导，擅长复杂系统及产品的逻辑构建和体验设计，先后就职于CBSi、PPTV、分众传媒等企业，跨界经历丰富。",
+      "producer-topic": "设计跨界协同 赋能产业创新",
+      "topic-information":
+        "产业互联网的迅速崛起，万物互联、万物智能，在新的领域和机遇下，设计的跨界协作和整合共创才能带来更多创新的机会。"
+    },
+    {
+      "producer-information": "...",
+      "producer-topic": "领域驱动的协作设计",
+      "topic-information":
+        "领域驱动设计的概念和相关实践被社区广泛采纳之后，尤其是事件风暴工作坊的流行，再一次证明了协作设计在软件开发过程中的巨大作用。在本分论坛中，我们希望从不同视角审视协作设计的过程，这种协作设计可能是架构设计，也可能是产品设计、交互设计、代码设计"
     }
   ]
 ];
