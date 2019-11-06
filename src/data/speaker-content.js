@@ -323,7 +323,7 @@ var speakers = [
   ],
   [
     {
-      "producer-img": "../resource/speakers/meixuesong.jpg",
+      "producer-img": "../resource/speakers/meixuesong.png",
       "producer-name": "梅雪松",
       "producer-introduction": "ThoughtWorks 高级咨询师",
       "producer-information":
