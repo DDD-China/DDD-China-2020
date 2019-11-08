@@ -434,7 +434,7 @@ var speakers = [
     {
       "producer-img": "../resource/speakers/pengshixin.png",
       "producer-name": "彭世新",
-      "producer-introduction": "人寿保险信息科技部高级经理",
+      "producer-introduction": "人保寿险信息科技部高级经理",
       "producer-information":
         "10+年大型寿险企业IT核心系统建设经验，曾负责人保寿险公司IT战略规划的制定和执行工作。",
       "producer-topic": "大规模遗留系统架构改造保险行业案例实践",
