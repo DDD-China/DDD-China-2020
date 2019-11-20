@@ -22,7 +22,7 @@ $(function() {
       '            <div class="flexbox-row">\n' +
       '                <div class="speaker-topic speaker-intro-row">\n' +
       '                 <div class="topic-abstract">' +
-      '                    <div class="speaker-topic-title">出品主题</div>\n' +
+      '                    <div class="speaker-topic-title">Content Topic</div>\n' +
       '                    <div class="speaker-topic-content"></div>\n' +
       "                 </div>" +
       "                </div>\n" +

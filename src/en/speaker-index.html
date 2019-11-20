@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DDD China Conference</title>
+    <link rel="stylesheet" href="../css/main.en.css">
+    <script type="text/javascript" src="../lib/jquery-3.2.1.min.js"></script>
+    <link rel="icon" href="../resource/favicon.ico">
+</head>
+
+<body>
+
+    @@include('../includes/en/navigation-header.html')
+
+    <div class="main-container">
+        <div class="grid-wrapper grid-space grid-grey">
+            <p class="grid centered title">Speaker and Topic</p>
+        </div>
+
+        <div class="grid grid-space centered">
+            <div class="topic-item-1">
+                @@include('../includes/en/speaker-topic-introduction.html')
+            </div>
+
+            <div class="topic-item-2">
+                <div class="grid-cell speaker-info text-left">
+                    <div class="flexbox-row">
+                        <div class="speaker-topic speaker-intro-row">
+                            <div class="speaker-topic-title">Track</div>
+                            <div class="speaker-topic-content"></div>
+                        </div>
+                        <div class="speaker-topic-detail flexbox-item grid-grey">
+                            <div class="speaker-topic-content-detail"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-wrapper grid-space grid-grey">
+            <p class="grid centered title">Speaker and Topic</p>
+        </div>
+
+        <div class="grid-wrapper grid-space">
+            @@include('../includes/en/speakers-speakers.html')
+        </div>
+
+        <div>
+            @@include('../includes/en/main-topics-simple.html')
+        </div>
+
+        @@include('../includes/en/footer-additional.html')
+    </div>
+</body>
+
+<script type="text/javascript" src="../js/main.js"></script>
+<script type="text/javascript" src="../data/speaker-content-en.js"></script>
+<script type="text/javascript" src="../js/speakers.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        focusOn(NAV_ITEMS.SPEAKER_INFO, LANGUAGE.ZH);
+    })
+</script>
+
+</html>

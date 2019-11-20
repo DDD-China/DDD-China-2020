@@ -13,29 +13,25 @@
 
     @@include('../includes/en/navigation-header.html')
 
-    <div class="main-container">
+    <div class="main-container keynote-detail">
         <div class="grid-wrapper">
             <div class="hero-banner">
                 <a href="./booking-tickets.html">
-                    <img src="../resource/workshop-2.png" alt="Topic pic">
+                    <img alt="Topic pic" class="keynot-banner">
                 </a>
             </div>
         </div>
 
         <div class="grid-wrapper grid-space">
-            @@include('../includes/en/workshop-2/workshop-abstract.html')
+            @@include('../includes/en/keynote/workshop-abstract.html')
         </div>
 
         <!-- <div class="grid-wrapper grid-space grid-grey">
-            @@include('../includes/en/workshop-1/workshop-schedule.html')
+            @@include('../includes/zh/keynote/workshop-schedule.html')
         </div> -->
 
-        <div class="grid-wrapper grid-space">
-            @@include('../includes/en/workshop-2/workshop-advantage.html')
-        </div>
-
         <div class="grid-wrapper grid-space grid-grey">
-            @@include('../includes/en/workshop-2/workshop-speaker-intro.html')
+            @@include('../includes/en/keynote/workshop-speaker-intro.html')
         </div>
 
         @@include('../includes/en/footer-additional.html')
@@ -43,9 +39,11 @@
     </div>
 </body>
 <script type="text/javascript" src="../js/main.js"></script>
+<script type="text/javascript" src="../data/keynote-content-en.js"></script>
+<script type="text/javascript" src="../js/keynote.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
-        focusOn(NAV_ITEMS.WORKSHOP, LANGUAGE.ZH);
+        focusOn(NAV_ITEMS.SPEAKER_INFO, LANGUAGE.ZH);
     })
 </script>
 

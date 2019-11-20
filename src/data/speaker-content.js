@@ -400,7 +400,7 @@ var speakers = [
       "producer-introduction": "戴姆勒大中华区 高级架构师",
       "producer-information":
         "专注于在企业内推动技术对业务的赋能，实现技术价值最大化。曾就职于ThoughtWorks，期间帮助多个企业完成其服务平台的设计及规划。行业覆盖汽车，零售，电信，云平台等领域。",
-      "producer-topic": "领域驱动的架构演进",
+      "producer-topic": "演进式企业架构",
       "topic-information":
         "曾经拿着系统全景图指点江山的企业架构师已然已经不再满足企业对他们的期待了。为了落地DevOps，他们需要进团队书写infrastructure as code; 为了落地微服务，他们需要拉着团队一起troubleshoot调用链。为了能够引进新技术，他们不仅需要专研AI，区块链，还需要专研ReactJS, Kotlin. 而这一切意味着企业对EA诉求的转变，为应对这样的变化，我们将可演进性引入EA，把EA从关注IT资产管理转为保持IT资产的活力。在实施两年后，这样的转变也让我们看到了企业活力的增长。"
     },
