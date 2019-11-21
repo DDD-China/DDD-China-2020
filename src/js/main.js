@@ -11,20 +11,24 @@ var NAV_ITEMS = {
     itemIndex: 3,
     title: "WORKSHOP"
   },
-  TOPIC_GATHERING: {
+  AGENDA: {
     itemIndex: 4,
+    title: "AGENDA"
+  },
+  TOPIC_GATHERING: {
+    itemIndex: 5,
     title: "TOPIC_GATHERING"
   },
   LOOK_BACK: {
-    itemIndex: 5,
+    itemIndex: 6,
     title: "LOOK_BACK"
   },
   ABOUT_THOUGHTWORKS: {
-    itemIndex: 6,
+    itemIndex: 7,
     title: "ABOUT_THOUGHTWORKS"
   },
   TRANSLATION: {
-    itemIndex: 7,
+    itemIndex: 8,
     title: "TRANSLATION"
   },
   LOOK_BACK_2017: {
@@ -50,6 +54,7 @@ var TRANSLATION_LOCATIONS = {
     CONFERENCE: "../en/index.html#agenda",
     SPEAKER_INFO: "../en/speaker-info.html",
     WORKSHOP: "../en/workshop.html",
+    AGENDA: "../en/conf-schedule.html",
     TOPIC_GATHERING: "../en/topic-gathering.html",
     LOOK_BACK_2017: "../en/look-back-2017.html",
     LOOK_BACK_2018: "../en/look-back-2018.html",
@@ -60,6 +65,7 @@ var TRANSLATION_LOCATIONS = {
     CONFERENCE: "../zh/index.html#agenda",
     SPEAKER_INFO: "../zh/speaker-info.html",
     WORKSHOP: "../zh/workshop.html",
+    AGENDA: "../zh/conf-schedule.html",
     TOPIC_GATHERING: "../zh/topic-gathering.html",
     LOOK_BACK_2017: "../zh/look-back-2017.html",
     LOOK_BACK_2018: "../zh/look-back-2018.html",
