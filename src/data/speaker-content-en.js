@@ -142,8 +142,7 @@ var speakers = [
       "producer-name": "Da Lei",
       "producer-introduction": "ThoughtWorks Digital Transform Consultant",
       "producer-information": "",
-      "producer-topic":
-        "Domain Design-based Enterprise Middleware Implementation Methodology",
+      "producer-topic": "How to Use DDD to Build Digital Platform",
       "topic-information":
         "Starting with transaction and by introduction of workplace and collaborative platform, we will detail how to use DDD build digital collaborative design platform and what kind of change this approach will deliver to digital transform in the organization."
     },
@@ -161,8 +160,7 @@ var speakers = [
       "producer-name": "Wan Xuefan",
       "producer-introduction": "ThoughtWorks East China Delivery Director",
       "producer-information": "",
-      "producer-topic":
-        "Domain Design-based Enterprise Middleware Implementation Methodology",
+      "producer-topic": "How to Use DDD to Build Digital Platform",
 
       "topic-information":
         "Starting with transaction and by introduction of workplace and collaborative platform, we will detail how to use DDD build digital collaborative design platform and what kind of change this approach will deliver to digital transform in the organization."
