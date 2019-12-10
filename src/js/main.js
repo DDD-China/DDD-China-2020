@@ -39,6 +39,10 @@ var NAV_ITEMS = {
     itemIndex: null,
     title: "LOOK_BACK_2018"
   },
+  LOOK_BACK_2019: {
+    itemIndex: null,
+    title: "LOOK_BACK_2019"
+  },
   BOOKING_TICKETS: {
     itemIndex: null,
     title: "BOOKING_TICKETS"
@@ -58,6 +62,7 @@ var TRANSLATION_LOCATIONS = {
     TOPIC_GATHERING: "../en/topic-gathering.html",
     LOOK_BACK_2017: "../en/look-back-2017.html",
     LOOK_BACK_2018: "../en/look-back-2018.html",
+    LOOK_BACK_2019: "../en/look-back-2019.html",
     BOOKING_TICKETS: "../en/booking-tickets.html",
     ABOUT_THOUGHTWORKS: "../en/about-thoughtworks.html"
   },
@@ -69,6 +74,7 @@ var TRANSLATION_LOCATIONS = {
     TOPIC_GATHERING: "../zh/topic-gathering.html",
     LOOK_BACK_2017: "../zh/look-back-2017.html",
     LOOK_BACK_2018: "../zh/look-back-2018.html",
+    LOOK_BACK_2019: "../zh/look-back-2019.html",
     BOOKING_TICKETS: "../zh/booking-tickets.html",
     ABOUT_THOUGHTWORKS: "../zh/about-thoughtworks.html"
   }
