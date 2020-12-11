@@ -56,7 +56,7 @@ var LANGUAGE = {
 var TRANSLATION_LOCATIONS = {
   [LANGUAGE.EN]: {
     CONFERENCE: "../en/index.html#agenda",
-    SPEAKER_INFO: "../en/blank-speaker-info.html",
+    SPEAKER_INFO: "../en/speaker-info.html",
     WORKSHOP: "../en/workshop.html",
     AGENDA: "../en/conf-schedule.html",
     TOPIC_GATHERING: "../en/topic-gathering.html",

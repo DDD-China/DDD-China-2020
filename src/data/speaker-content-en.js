@@ -1,6 +1,133 @@
 var speakers = [
   [
     {
+      "producer-img": "../resource/speakers/zhangyi.png",
+      "producer-name": "Yi Zhang",
+      "producer-introduction": "Technical Director of Travelsky",
+      "producer-information":
+        "Yi Zhang is the author of Domain-Driven Design Explained. He is keen on programming learning and skill improvement. He dedicates himself to the perfect combination of enterprise architecture, lean requirement management, DDD, microservices architecture to create an enterprise-oriented business Zhongtai, data warehouse, real-time stream processing, machine learning and high-performance storage to create an industry-oriented intelligent data Zhongtai.",
+      "producer-topic": "Secrets of DDD",
+      "topic-information":
+        "What is the difference between DDD and data-driven design? How did DDD change software design? \
+          * Why did DDD draw people's little attention in the first ten years, but now flourish into a golden age? \
+          * Is monolithic architecture still evil under the guidance of DDD? What is the difference between the monolithic and the microservices architecture?\
+          * What are the inherent shortcomings of DDD? Why do I propose a unified process for DDD? \
+          Uncover secrets of DDD, and highlight the beauty of DDD!"
+    },
+    {
+      noTopic: true,
+      "producer-information": "...",
+      "producer-topic": "...",
+      "topic-information": "..."
+    }
+  ],
+
+  [
+    {
+      "producer-img": "../resource/speakers/ouchuangxin.png",
+      "producer-name": "Chuangxin Ou",
+      "producer-introduction": "Senior Architect",
+      "producer-information":
+        "Chuangxin Ou is the author of Zhongtai Architecture and Implementation: Based on DDD and Microservices, and the columnist of DDD Hands-on Course in the website time.geekbang.org. He is keen on the design and methodology research of DDD-based Zhongtai and distributed microservices architecture.",
+      "producer-topic": "How to Design Microservices with Zhongtai and DDD?",
+      "topic-information":
+        "* The origins and timings of Zhongtai, DDD and microservices are different. The first thing to fuse the 3 methodologies is to establish a unified language. How to establish a unified language for DDD, Zhongtai and microservices? How to integrate them to complete collaborative design? \
+          * What is the core body of knowledge and complete design process of DDD? How to use DDD to guide and complete the domain division of Zhongtai domain and microservices design? \
+          * The rapid development of enterprise business will inevitably lead to constant changes in domain models and the evolution of microservices architecture. How to complete the evolution of the domain model and microservices architecture at the lowest cost? How to design microservices with clear boundaries instead of small distributed monolithic architecture?"
+    },
+    {
+      noTopic: true,
+      "producer-information": "...",
+      "producer-topic": "...",
+      "topic-information": "..."
+    }
+  ],
+
+  [
+    {
+      "producer-img": "../resource/speakers/yujing.png",
+      "producer-name": "Jing Yu",
+      "producer-introduction": "IBM Senior Application Architect",
+      "producer-information":
+        "Jing Yu has been engaged in development of enterprise-level applications and architecture design for many years. And she has accumulated rich experience in modernization of large legacy systems, DDD, microservices and cloud native system design.",
+      "producer-topic": "Practice of DDD in Transformation of Large Legacy Systems",
+      "topic-information":
+        " Since the concepts of DDD and microservices have been born, more and more Internet giants and traditional industries have begun to transform their legacy systems into microservices by splitting the system into more flexible and loosely coupled services with business-boundary contexts to respond to the rapidly changing market. This keynote speech will discuss the elegant transformation of an e-commerce platform with a history of 20 years and supporting millions of transactions through DDD in a real case. The main contents include: \
+          * Difficulties in rearchitecting of legacy systems\
+          * Microservices transformation of legacy systems led by DDD\
+          * Architecture design and transformation results of microservices system\
+          * Experiences and lessons learned in the process of transformation"
+    },
+    {
+      noTopic: true,
+      "producer-information": "...",
+      "producer-topic": "...",
+      "topic-information": "..."
+    }
+  ],
+
+  [
+    {
+      "producer-img": "../resource/speakers/yangyun.png",
+      "producer-name": "Yun Yang",
+      "producer-introduction": "Principle Consultant of ThoughtWorks",
+      "producer-information":
+        "Yun Yang has more than 20 years of experience in the software development industry and has been engaged in such industries as the Internet, enterprise application software, and consulting for many years. He has guided the implementation of several DDD projects. In recent years, he has been devoted himself to research on implementation of DDD modeling to code level in the case of a large-scale development team. What’s more, he is a proponent of functional programming.",
+      "producer-topic": "Three-Stage Approach: From DDD Strategic Design to Working Code",
+      "topic-information":
+        "1. The gap between the current common Event Storming modeling methods and the actual code implementation\
+          2. Establish a structural model for the key concepts and behaviors of the domain using the noun-verb approach\
+          3. Establish a model at the micro level (in detailed design phase) for the internal logic of specific behaviors using the type flow method."
+    },
+    {
+      noTopic: true,
+      "producer-information": "...",
+      "producer-topic": "...",
+      "topic-information": "..."
+    }
+  ],
+
+  [
+    {
+      "producer-img": "../resource/speakers/indualagarsamy.png",
+      "producer-name": "Indu Alagarsamy",
+      "producer-introduction": "Chief Application Architect of Unisys, leader of global DDD community",
+      "producer-information":
+        "Indu has more than 15 years of experience in the software industry. She works closely with clients to help them eliminate business friction in the process of modernization of legacy systems. Indu is also passionate about the diversity and inclusiveness of the technology industry.",
+      "producer-topic": "DDD Practice: Limited Context + Event-> Microservice",
+      "topic-information":
+        "DDD and messaging complement each other, just like a hot Chocolate Brownie with vanilla ice cream! DDD, such a software discipline, can not only help you write high-quality code agilely, but also enable the software written to respond to business changes flexibly. Timing coupling can be eliminated when messaging technology is used to communicate between clear, clean and well-defined bounded contexts. It sounds great to be able to build self-governing microservice from the start, right? \
+          We will bring together DDD as a software discipline and messaging as a software technology to build a reliable system that can be extended with business changes in this speech."
+    },
+    {
+      noTopic: true,
+      "producer-information": "...",
+      "producer-topic": "...",
+      "topic-information": "..."
+    }
+  ],
+
+  [
+    {
+      "producer-img": "../resource/speakers/nealford.png",
+      "producer-name": "Neal Ford",
+      "producer-introduction": "Director-level Architect of ThoughtWorks",
+      "producer-information":
+        "Neal Ford is the Director of ThoughtWorks, software architect and meme shepherd. ThoughtWorks is a software company. The colleagues are enthusiastic and goal-oriented, and they are committed to using technology to cope with the toughest challenges, while striving to revolutionize the IT industry and creating positive social changes. Neal, as one of them, often gives speeches on related topics at technical conferences.",
+      "producer-topic": "Build an Evolutionary Architecture",
+      "topic-information":
+        "In the past ten years, the concept of bounded contexts of DDD has made a difference to software architecture and inspired me to come up with some of the ideas in the book - Building Evolutionary Architectures. In this topic, Neal Ford, the author of the book, will discuss two key insights about evolutionary architectures and how DDD inspired him to come up with the quantum concept of software architecture."
+    },
+    {
+      noTopic: true,
+      "producer-information": "...",
+      "producer-topic": "...",
+      "topic-information": "..."
+    }
+  ],
+
+  [
+    {
       "producer-img": "../resource/speakers/huhao.png",
       "producer-name": "胡皓",
       "producer-introduction": "ThoughtWorks 高级咨询师",
