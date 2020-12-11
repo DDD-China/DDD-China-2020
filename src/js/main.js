@@ -68,7 +68,7 @@ var TRANSLATION_LOCATIONS = {
   },
   [LANGUAGE.ZH]: {
     CONFERENCE: "../zh/index.html#agenda",
-    SPEAKER_INFO: "../zh/blank-speaker-info.html",
+    SPEAKER_INFO: "../zh/speaker-info.html",
     WORKSHOP: "../zh/workshop.html",
     AGENDA: "../zh/conf-schedule.html",
     TOPIC_GATHERING: "../zh/topic-gathering.html",

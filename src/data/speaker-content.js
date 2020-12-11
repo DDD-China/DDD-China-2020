@@ -1,6 +1,132 @@
 var speakers = [
   [
     {
+      "producer-img": "../resource/speakers/zhangyi.png",
+      "producer-name": "张逸",
+      "producer-introduction": "民航信息技术总监",
+      "producer-information":
+        "《解构领域驱动设计》作者，热衷于编程语言学习与技艺提升，致力于将企业架构、精益需求管理、领域驱动设计与微服务架构完美结合，打造面向企业的业务中台；致力于将数据仓库、实时流处理、机器学习与高性能存储完美结合，打造面向行业的智能数据中台。",
+      "producer-topic": "领域驱动设计大揭秘",
+      "topic-information":
+        "领域驱动设计与数据驱动设计有何区别，领域驱动设计究竟改变了软件设计的哪些内容？\
+        * 领域驱动设计的最初十年为何少人问津，到如今却能蒸蒸日上进入它的黄金时代？\
+        * 在领域驱动设计的指导下，单体架构还是邪恶的吗？它与微服务架构差异究竟在哪里？\
+        * 领域驱动设计存在哪些天生不足，我为何要提出领域驱动设计统一过程？揭秘领域驱动设计的诸多疑问，彰显领域驱动设计之美！"
+    },
+    {
+      noTopic: true,
+      "producer-information": "...",
+      "producer-topic": "...",
+      "topic-information": "..."
+    }
+  ],
+
+  [
+    {
+    "producer-img": "../resource/speakers/ouchuangxin.png",
+    "producer-name": "欧创新",
+    "producer-introduction": "资深架构师",
+    "producer-information":
+      "《中台架构与实现：基于DDD和微服务》作者，极客时间《DDD实战课》专栏作者，热衷于基于DDD的中台和分布式微服务架构设计与方法论研究。",
+    "producer-topic": "当中台遇上DDD，如何设计微服务？",
+    "topic-information":
+      "* 中台、DDD和微服务起源不同，时代不同。方法论的融合首要在于建立通用语言。如何建立DDD、中台和微服务的统一语言？如何将三者融合完成协同设计？\
+       * DDD核心知识体系和完整设计过程是什么样的？如何用DDD指导完成中台领域边界划分和微服务设计？\
+       * 企业业务的快速发展必然会导致领域模型的不断变化和微服务的架构演进。如何用最小的代价完成领域模型与微服务的架构演进？如何设计出边界清晰的微服务而不是分布式小单体？"
+    },
+    {
+      noTopic: true,
+      "producer-information": "...",
+      "producer-topic": "...",
+      "topic-information": "..."
+    }
+  ],
+
+  [
+    {
+    "producer-img": "../resource/speakers/yujing.png",
+    "producer-name": "于静",
+    "producer-introduction": "IBM资深应用架构师",
+    "producer-information":
+      "多年从事企业级应用开发、架构设计工作。在大型遗留系统现代化改造、领域驱动设计、微服务、云原生系统设计等方面经验丰富。",
+    "producer-topic": "领域驱动设计在大型遗留系统改造中的实践",
+    "topic-information":
+      "自领域驱动设计和微服务概念提出至今，越来越多的互联网巨头以及传统行业都开始对自己的遗留系统进行微服务改造，通过把系统拆分为更加灵活、有业务边界上下文、松耦合的服务来应对快速变化的市场。本主题演讲将通过实际案例带您复盘一个有着二十年历史并支撑百万交易额的电商平台如何通过领域驱动设计的方法华丽转身。主要内容包括：\
+      * 遗留系统重构的难点 \
+      * 领域驱动设计引领遗留系统的微服务改造 \
+      * 微服务系统架构设计及改造结果 \
+      * 改造过程中的心得体会及踩过的坑"
+    },
+    {
+      noTopic: true,
+      "producer-information": "...",
+      "producer-topic": "...",
+      "topic-information": "..."
+    }
+  ],
+
+  [
+    {
+    "producer-img": "../resource/speakers/yangyun.png",
+    "producer-name": "杨云",
+    "producer-introduction": "ThoughtWorks总监级咨询师",
+    "producer-information":
+      "二十余年软件开发行业经验，在互联网、企业应用软件、咨询行业都有多年的深耕。指导过多个DDD实施项目的落地。近年来致力于研究如何能使DDD建模在大规模开发团队的情况下确实的落地到代码层面。  此外，他还是函数式编程的宣导者。",
+    "producer-topic": "DDD从战略设计到代码落地的三阶段方法",
+    "topic-information":
+      "1、当前常用的事件风暴建模方法和代码实际落地之间的空隙 \
+      2、用名词动词法为领域关键概念和行为建立结构层面的模型 \
+      3、用类型流方法为具体行为的内部逻辑建立微观层面（详设级别）的模型"
+    },
+    {
+      noTopic: true,
+      "producer-information": "...",
+      "producer-topic": "...",
+      "topic-information": "..."
+    }
+  ],
+
+  [
+    {
+    "producer-img": "../resource/speakers/indualagarsamy.png",
+    "producer-name": "Indu Alagarsamy",
+    "producer-introduction": "Unisys 首席应用架构师，全球DDD社区领袖",
+    "producer-information":
+      "在软件行业有超过15年的从业经验。她与客户紧密合作，帮助他们在遗留系统现代化的过程中，消除业务摩擦。Indu还对科技行业的多样性和包容性充满热情。",
+    "producer-topic": "DDD实战：限界上下文+事件 -> 微服务",
+    "topic-information":
+      "领域驱动设计和消息传递相辅相成，就像热乎乎的巧克力布朗尼和香草冰淇淋相搭配一样！ DDD这门软件学科，不仅可以助你身手敏捷地编写高质量的代码，还能使所编写的软件能灵活应对业务变化。 当使用消息传递技术在清晰整洁和定义良好的限界上下文之间进行通信时，就可以消除时序上的耦合。 一开始就能构建可以自治的微服务，这听起来很棒对吧？\
+      在本次演讲中，我们会让作为软件学科的DDD，与作为软件技术的消息传递相聚在一起，以构建可以随着业务变化而扩展的可靠系统。"
+    },
+    {
+      noTopic: true,
+      "producer-information": "...",
+      "producer-topic": "...",
+      "topic-information": "..."
+    }
+  ],
+
+  [
+    {
+    "producer-img": "../resource/speakers/nealford.png",
+    "producer-name": "Neal Ford",
+    "producer-introduction": "ThoughtWorks 总监架构师",
+    "producer-information":
+      "国际公认的软件开发和交付方面的专家，尤其是在敏捷工程技术和软件体系结构的交集方面。 撰写过杂志文章，八本书（仍在增加），数十个视频展示，并在全球数百个开发者大会上发表过演讲。",
+    "producer-topic": "构建演进式架构",
+    "topic-information":
+      "在过去十年中，DDD的限界上下文概念影响了软件架构，并启发Neal Ford产生了《演进式架构》书中的一些思想。 在本话题中，该书作者Neal Ford将讨论有关可演进架构的两个关键洞察，以及DDD如何启发他产生了软件架构的量子概念。"
+    },
+    {
+      noTopic: true,
+      "producer-information": "...",
+      "producer-topic": "...",
+      "topic-information": "..."
+    }
+  ],
+
+  [
+    {
       "producer-img": "../resource/speakers/huhao.png",
       "producer-name": "胡皓",
       "producer-introduction": "ThoughtWorks 高级咨询师",
