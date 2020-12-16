@@ -111,7 +111,7 @@ var speakers = [
     {
       "producer-img": "../resource/speakers/nealford.png",
       "producer-name": "Neal Ford",
-      "producer-introduction": "Director-level Architect of ThoughtWorks",
+      "producer-introduction": "Director, Software Architect of ThoughtWorks",
       "producer-information":
         "Neal Ford is the Director of ThoughtWorks, software architect and meme shepherd. ThoughtWorks is a software company. The colleagues are enthusiastic and goal-oriented, and they are committed to using technology to cope with the toughest challenges, while striving to revolutionize the IT industry and creating positive social changes. Neal, as one of them, often gives speeches on related topics at technical conferences.",
       "producer-topic": "Build an Evolutionary Architecture",

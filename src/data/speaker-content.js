@@ -110,7 +110,7 @@ var speakers = [
     {
     "producer-img": "../resource/speakers/nealford.png",
     "producer-name": "Neal Ford",
-    "producer-introduction": "ThoughtWorks 总监架构师",
+    "producer-introduction": "ThoughtWorks 全球技术总监、软件架构师",
     "producer-information":
       "国际公认的软件开发和交付方面的专家，尤其是在敏捷工程技术和软件体系结构的交集方面。 撰写过杂志文章，八本书（仍在增加），数十个视频展示，并在全球数百个开发者大会上发表过演讲。",
     "producer-topic": "构建演进式架构",
